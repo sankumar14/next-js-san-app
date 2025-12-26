@@ -1,34 +1,90 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-js-san-app ✅
 
-## Getting Started
+A small learning project to explore and practice Next.js (App Router) with TypeScript and Tailwind CSS. This repo contains a minimal e‑commerce-like UI with reusable components as my first step learning Next.js.
 
-First, run the development server:
+---
+
+## 🚀 Quick Overview
+
+- **Purpose:** A learning project to get comfortable with Next.js (App Router), TypeScript, and Tailwind CSS.
+- **What you'll find:** basic pages, a `ProductCard` component (with CSS module), an `AddToCart` component, and a `users` page.
+- **Key tech:** Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, DaisyUI.
+
+---
+
+## 📁 Project Structure
+
+- `app/` - Next.js App Router pages and layout
+  - `page.tsx` - Home page
+  - `layout.tsx` - Root layout
+  - `globals.css` - Global styles (Tailwind)
+  - `components/` - Reusable UI components
+    - `AddToCart.tsx` - Add-to-cart UI
+    - `ProductCard/` - `ProductCard.tsx` + `ProductCard.module.css`
+  - `users/page.tsx` - Example users page
+- `public/` - Static assets
+- `next.config.js`, `tailwind.config.ts`, `postcss.config.js` - tool config
+- `package.json` - scripts & dependencies
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+- DaisyUI (dev dependency)
+- ESLint
+
+---
+
+## ⚙️ Local Development
+
+Install dependencies and run the dev server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser. The app supports hot-reloading while you edit files in `app/`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build and run production locally:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ✅ What I covered (learning notes)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Created a Next.js app using the App Router (`app/` directory) and TypeScript.
+- Integrated Tailwind CSS for utility-first styling and used a CSS module for `ProductCard` styles.
+- Built small, reusable components (`ProductCard`, `AddToCart`) to practice component composition.
+- Explored routing by adding a `users` page and learned how layouts and pages interact.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔭 Next steps / Ideas
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Add state management (e.g., Zustand or React Context) for cart functionality.
+- Integrate a headless CMS or mock API to serve product data.
+- Add unit/integration tests for components and pages.
+- Deploy to Vercel for live preview.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## 🙌 Contributing
+
+This is a personal learning project. Feel free to open issues or PRs if you have suggestions — or use it as a starting point for your own learning.
+
+---
+
+## 📄 License
+
+MIT — feel free to reuse and adapt for learning purposes.
+
+---
